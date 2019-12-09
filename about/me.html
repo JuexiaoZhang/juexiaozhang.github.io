@@ -6,7 +6,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-     小张备忘录
+    About me |  小张备忘录
   </title>
   
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -30,57 +30,22 @@
 <body>
   <div id="app">
     <main class="content">
-      
-<section class="cover">
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="/images/cover1.jpg" alt="image frame" />
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">小张备忘录</a></h1>
-      <h2>2019年末试营业</h2>
-      <div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-learn-more">
-    <a href="#main" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
-
-<div id="main">
-  <section class="outer">
-  <article class="articles">
-    
-    <h1 class="page-type-title"></h1>
-
-    
-    
-    <article id="post-FirstNight" class="article article-type-post" itemscope
+      <section class="outer">
+  <article id="page-" class="article article-type-page" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
     
     <header class="article-header">
        
-<h2 itemprop="name">
-  <a class="article-title" href="/2019/12/09/FirstNight/"
-    >测试篇</a
-  >
-</h2>
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  About me
+</h1>
   
 
     </header>
     
 
-    
-    <div class="article-meta">
-      <a href="/2019/12/09/FirstNight/" class="article-date">
-  <time datetime="2019-12-09T09:49:04.992Z" itemprop="datePublished">2019-12-09</time>
-</a>
-      
-    </div>
     
 
     
@@ -92,17 +57,45 @@
       
 
       
-      <p>还不太会用Markdown, 先随便写点东西测试一下. 颤颤巍巍战战兢兢进行到这一步, github突然进不去了, 现在可以说是非常慌张了.</p>
-<h2 id="先写个小计划"><a href="#先写个小计划" class="headerlink" title="先写个小计划"></a>先写个小计划</h2><h3 id="建站动机"><a href="#建站动机" class="headerlink" title="建站动机"></a>建站动机</h3><p>本来想在lofter上写点东西的,但是lofter经常登录不上,还要担心会不会有朝一日被封掉,想了想还是自己搞个个人网站吧. 在github上又免费又不用自己设计页面,, 这种半傻瓜式建站方法太适合我了 —— 如果后面顺利的话</p>
-<h3 id="网站内容安排"><a href="#网站内容安排" class="headerlink" title="网站内容安排"></a>网站内容安排</h3><p>想先设置这么几个标签: 学习笔记, 沙雕日常 和 让自己过得更好的小tips</p>
-<h3 id="待处理问题"><a href="#待处理问题" class="headerlink" title="待处理问题"></a>待处理问题</h3><p>还不知道怎么设置标签. 这些文章应该写在哪我还很迷茫…</p>
-
+      
       
       <!-- 打赏 -->
       
+        <div class="page-reward">
+          <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+            <div class="tooltip tooltip-east">
+              <span class="tooltip-item">
+                赏
+              </span>
+              <span class="tooltip-content">
+                <span class="tooltip-text">
+                  <span class="tooltip-inner">
+                    <p class="reward-p"><i class="icon icon-quo-left"></i>请我喝杯咖啡吧~<i
+                        class="icon icon-quo-right"></i></p>
+                    <div class="reward-box">
+                      
+                      <div class="reward-box-item">
+                        <img class="reward-img" src="/images/alipay.jpg">
+                        <span class="reward-type">支付宝</span>
+                      </div>
+                      
+                      
+                      <div class="reward-box-item">
+                        <img class="reward-img" src="/images/wechat.jpg">
+                        <span class="reward-type">微信</span>
+                      </div>
+                      
+                    </div>
+                  </span>
+                </span>
+              </span>
+            </div>
+          </a>
+        </div>
+        
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/09/FirstNight/" data-id="ck3ygzu9u0000w9u7dgmt2d7c"
+      <a data-url="http://yoursite.com/about/me.html" data-id="ck3yl8jpy0000y4u76qn1agkn"
         class="article-share-link">分享</a>
       
     </footer>
@@ -110,22 +103,68 @@
   </div>
 
   
+  
+
+  
 
   
   
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine@1.3.10/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        notify: false,
+        verify: false,
+        app_id: 'chaSYi8FMdJBwzIBpxeNjqWC-gzGzoHsz',
+        app_key: 'PqqkLYgPkHvH1BmyQqySWnSK',
+        path: window.location.pathname,
+        avatar: 'mp',
+        placeholder: '给我的文章加点评论吧~',
+        recordIP: true
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+<style>
+    #vcomments-box {
+        padding: 5px 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 0px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #fff;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+
   
 
   
 
 </article>
-    
-  </article>
-  
-
-  
 </section>
-</div>
-
       <footer class="footer">
   <div class="outer">
     <ul class="list-inline">
